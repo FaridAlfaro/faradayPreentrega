@@ -1,10 +1,23 @@
+.container__cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: .3s;
+}
+
+.container__cards:hover > :not(:hover){
+    opacity: .8;
+    transition-delay: .1s;
+}
+
 .card{
     @include cards(20%, inherit, $faradayBlue);
     padding-bottom: 20px; 
     text-align: right;
     margin-bottom: 60px;
 }
-
+ 
 .card__img{
     @include cardsImg(100%, 25vh);
 }
