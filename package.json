@@ -13,5 +13,13 @@
   "dependencies": {
     "sass": "^1.57.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaridAlfaro/faradayPreentrega.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FaridAlfaro/faradayPreentrega/issues"
+  },
+  "homepage": "https://github.com/FaridAlfaro/faradayPreentrega#readme"
 }

@@ -10,16 +10,26 @@ body {
 }
 
 .container {
-  width: 90%;
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 100px 0;
+  padding-top: 50px;
   height: auto;
+  display: inline-block;
+}
+
+.container__bg {
+  display: flex;
+  margin: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container__modifier {
   width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .services {
@@ -28,29 +38,25 @@ body {
 
 .subtitle {
   font-size: 42px;
-  color: #fafafa;
+  margin-left: 20px;
+  color: #2DAAE1;
 }
 
 .subtitle__modifier {
   text-align: center;
-  margin-bottom: 16px;
+  margin: 20px 0;
 }
 
 .text__section {
   color: #C04E99;
   font-size: 22px;
   line-height: 32px;
-  margin-bottom: 60px;
-}
-
-.text__section__modifier {
-  text-align: center;
-  margin-bottom: 32px;
+  margin-left: 20px;
 }
 
 .background {
-  width: 68%;
-  height: 290px;
+  width: 80%;
+  height: auto;
   position: relative;
   border-radius: 10px;
   margin-bottom: 60px;
@@ -65,6 +71,7 @@ body {
 
 .background__text {
   position: absolute;
+  text-align: left;
   width: 100%;
   bottom: 30px;
   left: 15px;
@@ -74,17 +81,21 @@ body {
   border-radius: 6px;
 }
 
-.background__title {
+.background__p {
+  position: absolute;
   font-size: 24px;
   margin-bottom: 4px;
 }
 
-.testimony {
-  background-color: #C04E99;
+.background__title {
+  position: absolute;
+  font-size: 24px;
+  margin-bottom: 4px;
 }
 
 .testimony__container {
   display: flex;
+  margin: 20px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -194,23 +205,25 @@ body {
 
 .nav__caja {
   color: #FFFFFF;
-  height: 90px;
+  height: 60px;
 }
 
 .nav__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: inherit;
+  height: 60px;
   padding: 0;
 }
 
 .img__carousel {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 60px);
+  object-fit: cover;
 }
 
 #logo1 {
-  height: 50px;
+  height: 30px;
+  margin: 3vh;
 }
 
 .link {
@@ -218,7 +231,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 300;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .link__active {
@@ -231,6 +244,7 @@ body {
   justify-content: space-between;
   padding: 0;
   align-items: center;
+  padding: 3vh;
 }
 
 .mockup {
@@ -241,10 +255,13 @@ body {
 
 .caja__textos {
   width: 40%;
+  text-align: left;
+  display: block;
 }
 
 .title {
   font-size: 56px;
+  text-align: left;
   font-weight: 300;
   color: #FFFFFF;
 }
@@ -279,6 +296,11 @@ body {
   color: #fafafa;
 }
 
+.carousel-caption {
+  background-color: #2DAAE1;
+  border-radius: 6px;
+}
+
 .container__cards {
   display: flex;
   justify-content: space-evenly;
@@ -293,13 +315,13 @@ body {
 }
 
 .card {
-  width: 20%;
-  height: inherit;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 90%;
   overflow: hidden;
   background: #2DAAE1;
   border-radius: 10px;
   position: relative;
-  padding-bottom: 20px;
   text-align: right;
   margin-bottom: 60px;
 }
@@ -312,14 +334,14 @@ body {
 }
 
 .cards__text {
+  display: inline-block;
   text-align: left;
   width: 95%;
-  margin-left: auto;
-  padding-right: 25px;
+  margin: auto;
 }
 
 .card__list {
-  color: #C04E99;
+  color: blueviolet;
   font-weight: 700;
   margin: 25px 0 12px;
   font-size: 18px;
@@ -329,12 +351,12 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 8px;
+  margin: 20px 0 10px 0;
 }
 
 .card__text {
   color: #fafafa;
-  margin-bottom: 16px;
+  margin: 20px 0;
 }
 
 .card__button {
@@ -358,8 +380,8 @@ body {
 
 .container__bg {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 60px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -417,10 +439,6 @@ body {
   padding: 10px;
 }
 
-.footer {
-  background: white;
-}
-
 .footer__caption {
   padding-bottom: 0;
   display: flex;
@@ -430,11 +448,14 @@ body {
 
 .title__footer {
   font-size: 24px;
-  margin-bottom: 32px;
+  margin: 20px;
+  text-align: center;
+  color: #2DAAE1;
 }
 
 .download {
   width: 50%;
+  margin: 0 20px;
 }
 
 .download__app {
@@ -479,18 +500,8 @@ body {
   margin: 15px;
 }
 
-.politica__privacidad__margin {
-  margin-right: 10px;
-}
-
 .get__email {
   width: 50%;
-}
-
-.socialmedia {
-  margin-top: 24px;
-  display: flex;
-  color: red;
 }
 
 .socialmedia__icon {
@@ -499,14 +510,9 @@ body {
   display: inline-block;
 }
 
-.socialmedia__legend {
-  color: darkgreen;
-  margin-right: 16px;
-}
-
 .contact {
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-wrap: wrap;
   color: #FFFFFF;
 }
@@ -524,11 +530,10 @@ body {
 }
 
 .contact__icon {
-  font-size: 20px;
+  font-size: 24px;
+  margin: 10px;
   color: #fafafa;
   line-height: 20px;
-  padding: 10px;
-  margin-right: 4px;
 }
 
 .contact__title {
@@ -600,7 +605,14 @@ body {
   footer .container {
     padding: 60px;
   }
+  .container {
+    width: 100%;
+  }
+  .nav__title {
+    font-size: 12px;
+  }
   .nav__container {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
@@ -613,16 +625,13 @@ body {
     height: auto;
   }
   .links {
-    padding-bottom: 15px;
-    text-align: center;
-  }
-  .link {
-    padding: 8px 10px;
+    padding-top: 15px;
   }
   .caja__main {
+    display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    height: auto;
+    height: 100vh;
     padding: 40px 0;
   }
   .caja__textos {
@@ -655,7 +664,7 @@ body {
   }
   .card {
     margin-bottom: 50px;
-    width: 60%;
+    width: 100%;
   }
   .card__title {
     font-size: 40px;
@@ -670,8 +679,16 @@ body {
   .background__text {
     display: none;
   }
+  .testimony__container {
+    height: 100vh;
+    margin: auto;
+  }
+  .testimony__position {
+    display: none;
+  }
   .testimony__card {
-    width: 70%;
+    width: 30%;
+    height: 50%;
   }
   .testimony__name {
     font-size: 20px;
@@ -682,6 +699,9 @@ body {
   }
   .container__modifier {
     width: 80%;
+  }
+  .projects {
+    padding: auto;
   }
 }
 div {

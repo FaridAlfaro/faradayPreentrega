@@ -1,3 +1,4 @@
+
 .container__cards{
     display: flex;
     justify-content: space-evenly;
@@ -12,25 +13,33 @@
 }
 
 .card{
-    @include cards(20%, inherit, $faradayBlue);
-    padding-bottom: 20px; 
+    align-items: center;
+    padding-bottom: 20px;
+    width: 90%;
+    overflow: hidden;
+    background: #2DAAE1;
+    border-radius: 10px;
+    position: relative;
     text-align: right;
     margin-bottom: 60px;
 }
- 
+
 .card__img{
-    @include cardsImg(100%, 25vh);
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
 }
 
 .cards__text{
+    display: inline-block;
     text-align: left;
     width: 95%;
-    margin-left: auto;
-    padding-right: 25px;
+    margin: auto;
 }
 
 .card__list{
-    color: $faradayVio;
+    color: blueviolet;
     font-weight: 700;
     margin: 25px 0 12px;
     font-size: 18px;
@@ -40,15 +49,13 @@
     font-size: 20px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-bottom: 8px;
+    margin: 20px 0 10px 0;
 }
 
 .card__text{
     color: #fafafa;
-    margin-bottom: 16px;
+    margin: 20px 0;
 }
-
-
 
 .card__button{
     display: block;
@@ -56,7 +63,7 @@
     border-radius: 6px;
     text-decoration: 90%;
     width: 100%;
-    color: $faradayBlue;
+    color: #2DAAE1;
     font-weight: 700;
     text-align: center;
     padding: 12px 0;
@@ -71,18 +78,26 @@
 }
 .container__bg{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 60px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .testimony__card{
-    @include cards(30%, 500px, white);
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+    position: relative;
     margin-bottom: 30px;
 }
 
 .testimony__img{
-    @include cardsImg(100%, 100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
     border-radius: inherit;
     object-position: center top;
 }

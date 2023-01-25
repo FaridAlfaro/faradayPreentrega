@@ -1,6 +1,3 @@
-.footer{
-    background: white;
-}
 .footer__caption{
     padding-bottom: 0;
     display: flex;
@@ -9,12 +6,14 @@
 }
 .title__footer{
     font-size: 24px;
-    margin-bottom: 32px;
-
+    margin: 20px;
+    text-align: center;
+    color: $faradayBlue;
 }
 
 .download{
     width: 50%;
+    margin: 0 20px;
 }
 
 .download__app{
@@ -59,19 +58,10 @@
     margin: 15px;
 }
 
-.politica__privacidad__margin{
-    margin-right: 10px;
-}
-
 .get__email{
     width: 50%;
 }
 
-.socialmedia{
-    margin-top: 24px;
-    display: flex;
-    color: red;
-}
 
 .socialmedia__icon{
     font-size: 18px;
@@ -79,17 +69,11 @@
     display: inline-block;
 }
 
-.socialmedia__legend{
-    color: darkgreen;
-    margin-right: 16px;
-}
-
 .contact{
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-wrap: wrap;
     color: #FFFFFF;
-
 }
 
 .item__contact{
@@ -105,11 +89,10 @@
 }
 
 .contact__icon{
-    font-size: 20px;
+    font-size: 24px;
+    margin: 10px;
     color: #fafafa;
     line-height: 20px;
-    padding: 10px;
-    margin-right: 4px;
 }
 
 .contact__title{

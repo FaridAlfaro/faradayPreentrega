@@ -6,7 +6,7 @@
 
 .nav__caja{
     color: #FFFFFF;
-    height: 90px;
+    height: 60px;
 
 }
 
@@ -14,17 +14,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: inherit;
+    height: 60px;
     padding: 0;
 }
 
 .img__carousel{
-    height: calc(100vh - 90px);
+    height: calc(100vh - 60px);
+    object-fit: cover;
 }
 
 
 #logo1{
-    height: 50px;
+    height: 30px;
+    margin: 3vh;
 }
 
 .link{
@@ -32,7 +34,7 @@
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 300;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .link__active{
@@ -44,6 +46,7 @@
     justify-content: space-between;
     padding: 0;
     align-items: center;
+    padding: 3vh;
 }
 .mockup{
     object-fit: cover;
@@ -52,10 +55,13 @@
 }
 .caja__textos{
     width: 40%;
+    text-align: left;
+    display: block;
 }
 
 .title{
     font-size: 56px;
+    text-align: left;
     font-weight: 300;
     color: #FFFFFF;
 }
@@ -87,4 +93,8 @@
     background-color: $faradayVio;
     transition: 0.5s;
     color: #fafafa;
+}
+.carousel-caption{
+    background-color: $faradayBlue;
+    border-radius: 6px;
 }

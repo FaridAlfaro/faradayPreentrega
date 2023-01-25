@@ -10,16 +10,24 @@ body{
     font-family: 'Montserat', sans-serif; 
 }
 .container{
-    width: 90%;
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    padding: 100px 0;
+    padding-top: 50px;
     height: auto;
+    display: inline-block;
 }
-
+.container__bg{
+    display: flex;
+    margin: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .container__modifier{
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
 }
 
 .services{
@@ -28,28 +36,24 @@ body{
 
 .subtitle{
     font-size: 42px;
-    color: #fafafa;
+    margin-left: 20px;
+    color: $faradayBlue;
 }
 
 .subtitle__modifier{
     text-align: center;
-    margin-bottom: 16px;
+    margin: 20px 0;
 }
 
 .text__section{
     color: $faradayVio;
     font-size: 22px;
     line-height: 32px;
-    margin-bottom: 60px;
+    margin-left: 20px;
 }
-.text__section__modifier{
-    text-align: center;
-    margin-bottom: 32px;
-}
-
 .background{
-    width: 68%;
-    height: 290px;
+    width: 80%;
+    height: auto;
     position: relative;
     border-radius: 10px;
     margin-bottom: 60px;
@@ -64,6 +68,7 @@ body{
 
 .background__text{
     position: absolute;
+    text-align: left;
     width: 100%;
     bottom: 30px;
     left: 15px;
@@ -72,18 +77,21 @@ body{
     padding: 20px;
     border-radius: 6px;
 }
+.background__p{
+    position: absolute;
+    font-size: 24px;
+    margin-bottom: 4px;    
+}
 
 .background__title{
+    position: absolute;
     font-size: 24px;
     margin-bottom: 4px;
 }
 
-.testimony{
-    background-color: $faradayVio;
-}
-
 .testimony__container{
     display: flex;
+    margin: 20px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
