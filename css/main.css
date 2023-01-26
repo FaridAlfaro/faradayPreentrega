@@ -635,6 +635,7 @@ body {
   .text {
     text-align: left;
     font-size: 25px;
+    width: auto;
   }
   .subtitle {
     font-size: 35px;
