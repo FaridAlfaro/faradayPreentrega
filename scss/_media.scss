@@ -71,22 +71,19 @@
     .nav__title{
         font-size: 12px;
     }
+
     .nav__container{
         display: flex;
-        flex-wrap: wrap;
+        height: auto;
+        flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-evenly;
     }
     .logo__picture{
         padding: 15px 0;
     }
-
     .nav__caja{
         height: auto;
-    }
-
-    .links{
-        
     }
     .caja__main{
         display: flex;
