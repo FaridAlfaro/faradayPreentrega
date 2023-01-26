@@ -378,13 +378,6 @@ body {
   margin-bottom: 15px;
 }
 
-.container__bg {
-  display: flex;
-  margin: 60px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .testimony__card {
   width: 30%;
   height: 500px;
@@ -601,10 +594,6 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
-  main .container,
-  footer .container {
-    padding: 60px;
-  }
   .container {
     width: 100%;
   }
@@ -619,13 +608,9 @@ body {
   }
   .logo__picture {
     padding: 15px 0;
-    text-align: center;
   }
   .nav__caja {
     height: auto;
-  }
-  .links {
-    padding-top: 15px;
   }
   .caja__main {
     display: flex;
@@ -635,17 +620,20 @@ body {
     padding: 40px 0;
   }
   .caja__textos {
+    margin-left: 30px;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .mockup {
-    width: 60%;
-    margin-bottom: 15px;
+    width: 80%;
+    margin-bottom: 0;
   }
   .title {
     font-size: 40px;
+    text-align: left;
   }
   .text {
+    text-align: left;
     font-size: 25px;
   }
   .subtitle {
@@ -667,7 +655,7 @@ body {
     width: 100%;
   }
   .card__title {
-    font-size: 40px;
+    font-size: 24px;
   }
   .card__button {
     width: 100%;
@@ -680,15 +668,14 @@ body {
     display: none;
   }
   .testimony__container {
-    height: 100vh;
-    margin: auto;
+    height: auto;
   }
   .testimony__position {
     display: none;
   }
   .testimony__card {
-    width: 30%;
-    height: 50%;
+    width: 80%;
+    margin: 20px;
   }
   .testimony__name {
     font-size: 20px;
@@ -700,8 +687,18 @@ body {
   .container__modifier {
     width: 80%;
   }
+  .download__item {
+    width: auto;
+    height: auto;
+  }
   .projects {
     padding: auto;
+  }
+  .download__app {
+    display: block;
+  }
+  .download__title {
+    margin: 0 20px;
   }
 }
 div {
