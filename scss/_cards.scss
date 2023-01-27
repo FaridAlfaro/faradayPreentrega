@@ -4,12 +4,6 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    transition: .3s;
-}
-
-.container__cards:hover > :not(:hover){
-    opacity: .8;
-    transition-delay: .1s;
 }
 
 .card{
@@ -108,8 +102,11 @@
     padding: 15px 8px;
     display: flex;
     align-items: center;
+    transition: .4s;
 }
-
+.testimony__text:hover{
+    background-color: $faradayBlue;
+}
 .testimony__text__modifier{
     background: none;
 }

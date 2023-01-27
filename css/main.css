@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: "Montserat", sans-serif;
 }
@@ -301,17 +306,21 @@ body {
   border-radius: 6px;
 }
 
+.carousel__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.carousel__p {
+  font-size: 18px;
+  margin: 5px;
+}
+
 .container__cards {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  transition: 0.3s;
-}
-
-.container__cards:hover > :not(:hover) {
-  opacity: 0.8;
-  transition-delay: 0.1s;
 }
 
 .card {
@@ -409,6 +418,11 @@ body {
   padding: 15px 8px;
   display: flex;
   align-items: center;
+  transition: 0.4s;
+}
+
+.testimony__text:hover {
+  background-color: #2DAAE1;
 }
 
 .testimony__text__modifier {
