@@ -239,7 +239,7 @@ body {
   padding: 0 10px;
 }
 
-.link__active {
+.link:hover {
   font-weight: 700;
 }
 
@@ -719,6 +719,9 @@ body {
   }
   #blog_pic {
     margin: 50px;
+  }
+  .newsletter {
+    width: 100vh;
   }
 }
 div {
