@@ -320,8 +320,8 @@ body {
   margin: 5px;
 }
 
-.bx-menu .bx-window-close {
-  display: none;
+.caja .bx {
+  color: #2DAAE1;
 }
 
 .container__cards {
@@ -643,7 +643,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 140px);
     padding: 40px 0;
   }
   .caja__textos {
@@ -746,6 +746,9 @@ body {
   }
   .respmenu input[type=checkbox] {
     opacity: 0;
+  }
+  .caja .bx {
+    color: white;
   }
   .respmenu {
     color: white;
