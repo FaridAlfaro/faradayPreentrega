@@ -3,6 +3,9 @@
     height: 100vh;
     background: $faradayBlue;
 }
+.caja input{
+    display: none;
+}
 
 .nav__caja{
     color: #FFFFFF;
@@ -105,4 +108,7 @@
 .carousel__p{
     font-size: 18px;
     margin: 5px;
+}
+.bx-menu .bx-window-close{
+    display: none;
 }
